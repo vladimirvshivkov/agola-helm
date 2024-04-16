@@ -445,3 +445,11 @@ minio:
   enabled: true
   rootUser: minio
   rootPassword: minio123
+  replicas: 1
+  resources:
+    requests:
+      memory: 4Gi
+  users:
+    - accessKey: agola
+      secretKey: agola
+      policy: readwrite
